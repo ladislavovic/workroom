@@ -1,0 +1,98 @@
+<bean name="javaToXml" class="cz.sykora.cross.exchange_format.exports.CEFExport" />
+<bean name="xmlToJava" class="cz.sykora.cross.exchange_format.imports.CEFImport" />
+<bean name="cefNodesProcessor" class="cz.sykora.cross.exchange_format.imports.processors.NodesProcessor" />
+<bean name="cefNodeRelationsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.NodeRelationsProcessor" />
+<bean name="cefLinksProcessor" class="cz.sykora.cross.exchange_format.imports.processors.LinksProcessor" />
+<bean name="cefSubnetworksProcessor" class="cz.sykora.cross.exchange_format.imports.processors.SubnetworksProcessor" />
+<bean name="cefGroupsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.GroupsProcessor" />
+<bean name="cefRoutingsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.RoutingsProcessor" />
+<bean name="cefMaterialsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.MaterialsProcessor" />
+<bean name="cefMaterialTemplatesProcessor" class="cz.sykora.cross.exchange_format.imports.processors.MaterialTemplatesProcessor" />
+<bean name="cefIpTagsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.IpTagsProcessor" />
+<bean name="cefIpPoolsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.IpPoolsProcessor" />
+<bean name="cefProjectsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.ProjectsProcessor" />
+<bean name="cefCountriesProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CountriesProcessor" />
+<bean name="cefCustomTownsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CustomTownsProcessor" />
+<bean name="cefCustomStreetsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CustomStreetsProcessor" />
+<bean name="cefCustomAddressesProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CustomAddressesProcessor" />
+<bean name="cefCzechRegionsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CzechRegionsProcessor" />
+<bean name="cefCzechTownshipsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CzechTownshipsProcessor" />
+<bean name="cefCzechTownsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CzechTownsProcessor" />
+<bean name="cefCzechTownPartsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CzechTownPartsProcessor" />
+<bean name="cefCzechTownDistrictsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CzechTownDistrictsProcessor" />
+<bean name="cefCzechStreetsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CzechStreetsProcessor" />
+<bean name="cefCzechAddressesProcessor" class="cz.sykora.cross.exchange_format.imports.processors.CzechAddressesProcessor" />
+<bean name="cefPolandRegionsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PolandRegionsProcessor" />
+<bean name="cefPolandSubregionsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PolandSubregionsProcessor" />
+<bean name="cefPolandSubSubregionsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PolandSubSubregionsProcessor" />
+<bean name="cefPolandTownsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PolandTownsProcessor" />
+<bean name="cefPolandTownPartsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PolandTownPartsProcessor" />
+<bean name="cefPolandStreetsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PolandStreetsProcessor" />
+<bean name="cefPolandAddressesProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PolandAddressesProcessor" />
+<bean name="cefCAEnumItemsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.EnumItemsProcessor" />
+<bean name="cefNetOperatorsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.NetOperatorsProcessor" />
+<bean name="cefPhoneQuotasProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PhoneQuotasProcessor" />
+<bean name="cefPhoneTagsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PhoneTagsProcessor" />
+<bean name="cefPhonePoolsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.PhonePoolsProcessor" />
+<bean name="cefServicesProcessor" class="cz.sykora.cross.exchange_format.imports.processors.ServicesProcessor" />
+<bean name="cefExternalIDsProcessor" class="cz.sykora.cross.exchange_format.imports.processors.ExternalIDsProcessor" />
+<bean name="generateXSDEnumFile" class="cz.sykora.cross.exchange_format.generators.GenerateXSDEnumFile" />
+<bean name="validateInputData" class="cz.sykora.cross.exchange_format.test.ValidateInputData" />
+<bean name="caTypesMap" class="cz.sykora.cross.exchange_format.ca.CATypesMap" />
+<bean name="configExport" class="cz.sykora.cross.exchange_format.configurations.CrossCoreConfigurationExport" /> 
+<bean name="configImport" class="cz.sykora.cross.exchange_format.configurations.CrossCoreConfigurationImport" />
+<bean id="BooleanToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.BooleanToCEFStringConverter"/>
+<bean id="NumberToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.NumberToCEFStringConverter"/>
+<bean id="DateToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.DateToCEFStringConverter"/>
+<bean id="StringToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.StringToCEFStringConverter"/>
+<bean id="CountryToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.CountryToCEFStringConverter"/>
+<bean id="AddressToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.AddressToCEFStringConverter"/>
+<bean id="TownToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.TownToCEFStringConverter"/>
+<bean id="NoteToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.NoteToCEFStringConverter"/>
+<bean id="RadioBandToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.RadioBandToCEFStringConverter"/>
+<bean id="RadioChannelToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.RadioChannelToCEFStringConverter"/>
+<bean id="RadioKMBToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.RadioKMBToCEFStringConverter"/>
+<bean id="RadioSubBandToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.RadioSubBandToCEFStringConverter"/>
+<bean id="RadioBandWidthToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.RadioBandWidthToCEFStringConverter"/>
+<bean id="CAEnumItemToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.CAEnumItemToCEFStringConverter"/>
+<bean id="NetOperatorToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.NetOperatorToCEFStringConverter"/>
+<bean id="CAStringSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CAStringSetToCEFStringSetConverter"/>
+<bean id="CAAttachmentSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CAAttachmentSetToCEFStringSetConverter"/>
+<bean id="CALinkTypeSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CALinkTypeSetToCEFStringSetConverter"/>
+<bean id="CARadioSubBandSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CARadioSubBandSetToCEFStringSetConverter"/>
+<bean id="CARadioKMBSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CARadioKMBSetToCEFStringSetConverter"/>
+<bean id="CARadioBandWidthSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CARadioBandWidthSetToCEFStringSetConverter"/>
+<bean id="CAAddressSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CAAddressSetToCEFStringSetConverter"/>
+<bean id="CAEnumItemSetToCEFStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CAEnumItemSetToCEFStringSetConverter"/>				
+<bean id="PointToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.PointToCEFStringConverter"/>
+<bean id="LineStringToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.LineStringToCEFStringConverter"/>
+<bean id="MultiPolygonToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.MultiPolygonToCEFStringConverter"/>
+<bean id="GeometryCollectionToCEFStringConverter" class="cz.sykora.cross.exchange_format.converters.GeometryCollectionToCEFStringConverter"/>
+<bean id="CEFStringToBooleanConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToBooleanConverter"/>
+<bean id="CEFStringToNumberConverterFactory" class="cz.sykora.cross.exchange_format.converters.CEFStringToNumberConverterFactory"/>
+<bean id="CEFStringToDateConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToDateConverter"/>
+<bean id="CEFStringToStringConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToStringConverter"/>
+<bean id="CEFStringToCountryConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToCountryConverter"/>
+<bean id="CEFStringToAddressConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToAddressConverter"/>
+<bean id="CEFStringToTownConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToTownConverter"/>
+<bean id="CEFStringToNoteConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToNoteConverter"/>
+<bean id="CEFStringToRadioBandConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToRadioBandConverter"/>
+<bean id="CEFStringToRadioChannelConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToRadioChannelConverter"/>
+<bean id="CEFStringToRadioKMBConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToRadioKMBConverter"/>
+<bean id="CEFStringToRadioSubBandConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToRadioSubBandConverter"/>
+<bean id="CEFStringToRadioBandWidthConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToRadioBandWidthConverter"/>
+<bean id="CEFStringToCAEnumItemConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToCAEnumItemConverter"/>
+<bean id="CEFStringToNetOperatorConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToNetOperatorConverter"/>
+<bean id="CEFStringSetToCAStringSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCAStringSetConverter"/>
+<bean id="CEFStringSetToCAAttachmentSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCAAttachmentSetConverter"/>
+<bean id="CEFStringSetToCALinkTypeSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCALinkTypeSetConverter"/>
+<bean id="CEFStringSetToCARadioSubBandSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCARadioSubBandSetConverter"/>
+<bean id="CEFStringSetToCARadioKMBSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCARadioKMBSetConverter"/>
+<bean id="CEFStringSetToCARadioBandWidthSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCARadioBandWidthSetConverter"/>
+<bean id="CEFStringSetToCAAddressSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCAAddressSetConverter"/>				
+<bean id="CEFStringSetToCAEnumItemSetConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringSetToCAEnumItemSetConverter"/>
+<bean id="CEFStringToPointConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToPointConverter"/>
+<bean id="CEFStringToLineStringConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToLineStringConverter"/>
+<bean id="CEFStringToMultiPolygonConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToMultiPolygonConverter"/>
+<bean id="CEFStringToGeometryCollectionConverter" class="cz.sykora.cross.exchange_format.converters.CEFStringToGeometryCollectionConverter"/>
+	
